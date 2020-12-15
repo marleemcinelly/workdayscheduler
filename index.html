@@ -130,6 +130,7 @@
       var now = dt.toLocaleString(DateTime);
 
         console.log(dt.hour);
+        var dtHour = dt.hour
 
       renderDateTime();
       function renderDateTime() {
@@ -139,68 +140,14 @@
       renderSavedData();
       function renderSavedData() {
         document.getElementById("9").innerHTML = localStorage.getItem("input9am");
-        if (dt.hour > 9) {
-          $("#9").attr('present', 'past')
-        }
-        if (dt.hour < 9) {
-          $("#9").attr('present', 'future')
-        }
         document.getElementById("10").innerHTML = localStorage.getItem("input10am");
-        if (dt.hour > 10) {
-          $("#10").attr('present', 'past')
-        }
-        if (dt.hour < 10) {
-          $("#10").attr('present', 'future')
-        }
         document.getElementById("11").innerHTML = localStorage.getItem("input11am");
-        if (dt.hour > 11) {
-          $("#11").attr('present', 'past')
-        }
-        if (dt.hour < 11) {
-          $("#11").attr('present', 'future')
-        }
         document.getElementById("12").innerHTML = localStorage.getItem("input12pm");
-        if (dt.hour > 12) {
-          $("#12").attr('present', 'past')
-        }
-        if (dt.hour < 12) {
-          $("#12").attr('present', 'future')
-        }
         document.getElementById("13").innerHTML = localStorage.getItem("input1pm");
-        if (dt.hour > 13) {
-          $("#13").attr('present', 'past')
-        }
-        if (dt.hour < 13) {
-          $("#13").attr('present', 'future')
-        }
         document.getElementById("14").innerHTML = localStorage.getItem("input2pm");
-        if (dt.hour > 14) {
-          $("#14").attr('present', 'past')
-        }
-        if (dt.hour < 14) {
-          $("#14").attr('present', 'future')
-        }
         document.getElementById("15").innerHTML = localStorage.getItem("input3pm");
-        if (dt.hour > 15) {
-          $("#15").attr('present', 'past')
-        }
-        if (dt.hour < 15) {
-          $("#15").attr('present', 'future')
-        }
         document.getElementById("16").innerHTML = localStorage.getItem("input4pm");
-        if (dt.hour > 16) {
-          $("#16").attr('present', 'past')
-        }
-        if (dt.hour < 16) {
-          $("#16").attr('present', 'future')
-        }
         document.getElementById("17").innerHTML = localStorage.getItem("input5pm");
-        if (dt.hour > 17) {
-          $("#17").attr('present', 'past')
-        }
-        if (dt.hour < 17) {
-          $("#17").attr('present', 'future')
-        }
       }
 
       $("#9am").on("click", function(event) {
